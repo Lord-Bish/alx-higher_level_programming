@@ -1,5 +1,4 @@
 #!/bin/bash
 
 /* Compile the Python script */
-output_filename="${PYFILE}c"
-python -m py_compile "$PYFILE" -o "$output_filename"
+python3 -m compileall -b "$PYFILE"
