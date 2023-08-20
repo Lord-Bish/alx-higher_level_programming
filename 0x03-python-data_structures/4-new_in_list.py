@@ -4,8 +4,9 @@ def new_in_list(my_list, idx, element):
 
     new_list = my_list[:]
 
-    if 0 <= idx < (length):
-        
+    if idx < 0 or idx > (length - 1):
+        return (new_list)
+    else:
         new_list[idx] = element
 
-    print(new_list)
+        return (new_list)
