@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Th8s module creates a square class"""
-class square:
+"""This module creates a square class"""
+class Square:
     """a square class"""
     def __init__(self, size=0, position=(0, 0)):
         """initializing instance attributes"""

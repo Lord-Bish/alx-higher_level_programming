@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This module creates a class called square"""
-class square:
+class Square:
     """The square class"""
     def __init__(self, size=0):
         """initializimg the size attribute"""

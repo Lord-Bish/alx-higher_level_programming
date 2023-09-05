@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This module creates a class square"""
-class square:
+class Square:
     """a square class"""
     def __init__(self, size=0):
         """initializing the size attribute"""
@@ -33,3 +33,4 @@ class square:
             for i in range(0, self.__size):
                 for j in range(self.__size):
                     print("#", end="")
+                print()
