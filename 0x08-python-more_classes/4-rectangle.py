@@ -13,6 +13,9 @@ class Rectangle:
             for i in range(0, self.__height):
                 print("#" * self.__width)
             print()
+    
+    def __repr__(self):
+        return (f"Rectangle("{self.__width}"," {self.__height}")")
 
     @property
     def width(self):
@@ -48,3 +51,4 @@ class Rectangle:
             return (0)
         else:
             return (2 * (self.__width + self.__height))
+
