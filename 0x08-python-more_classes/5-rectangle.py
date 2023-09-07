@@ -7,6 +7,7 @@ class Rectangle:
         self.height = height
     
     def __str__(self):
+        """ prints string format """
         if (self.__width == 0) or (self.__height == 0):
             return ("")
         else:
@@ -14,17 +15,21 @@ class Rectangle:
                 print("#" * self.__width)
 
     def __repr__(self):
+        """ returns string representation """
         return (f"Rectangle("{self.__width}"," {self.__height}")")
 
     def __del__(self):
+        """ calls when class instance is deleted """
         print("Bye rectangle...")
 
     @property
     def width(self):
+        """ a getter method """
         return (self.__width)
 
     @width_setter
     def width(self, value):
+        """ a setter method """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -34,10 +39,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """a getter method """
         return (self.__height)
 
     @height_setter
     def height(self, value):
+        """ a setter method """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
@@ -46,10 +53,14 @@ class Rectangle:
             self.__height = value
 
     def area(self):
+        """ prints area """
         return (self.__width * self.__height)
 
     def perimeter(self):
+        """ prints the perimeter """
         if (self.__width == 0) or (self.__height == 0):
             return (0)
         else:
             return (2 * (self.__width + self.__height))
+
+
