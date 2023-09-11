@@ -10,7 +10,7 @@ class Rectangle:
         self.height = height
 
         number_of_instances += 1
-    
+
     def __str__(self):
         """ prints string format """
         if (self.__width == 0) or (self.__height == 0):

@@ -6,7 +6,7 @@ class Rectangle:
         """ initializes class instances """
         self.width = width
         self.height = height
-    
+
     def __str__(self):
         """ prints the string format """
         if (self.__width == 0) or (self.__height == 0):

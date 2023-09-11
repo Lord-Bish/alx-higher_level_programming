@@ -6,7 +6,7 @@ class Rectangle:
         """ initializes class instances """
         self.width = width
         self.height = height
-    
+
     def __str__(self):
         """ prints string format """
         if (self.__width == 0) or (self.__height == 0):
@@ -15,7 +15,7 @@ class Rectangle:
             for i in range(0, self.__height):
                 print("#" * self.__width)
             print()
-    
+
     def __repr__(self):
         """ prints the string representation """
         return (f"Rectangle({self.__width}, {self.__height})")

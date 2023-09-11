@@ -6,7 +6,7 @@ class Rectangle:
         """This method initializes class attributes"""
         self.width = width
         self.height = height
-    
+
     def __str__(self):
         """ prints string format """
         if (self.__width == 0) or (self.__height == 0):
@@ -17,7 +17,7 @@ class Rectangle:
 
     def __repr__(self):
         """ returns string representation """
-        return (f"Rectangle("{self.__width}"," {self.__height}")")
+        return (f"Rectangle({self.__width}, {self.__height})")
 
     def __del__(self):
         """ calls when class instance is deleted """

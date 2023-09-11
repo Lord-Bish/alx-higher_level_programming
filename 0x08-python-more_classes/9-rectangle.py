@@ -87,4 +87,3 @@ class Rectangle():
     def square(cls, size=0):
         """returns a square instance"""
         return (cls(size, size))
-
