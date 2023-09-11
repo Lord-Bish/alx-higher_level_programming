@@ -22,7 +22,7 @@ class Rectangle():
 
     def __repr__(self):
         """prints string representation"""
-        return (f"Rectangle("{self.__width}"," {self.__height}")")
+        return (f"Rectangle({self.__width}, {self.__height})")
 
     def __del__(self):
         """calls when class instance is deleted"""
