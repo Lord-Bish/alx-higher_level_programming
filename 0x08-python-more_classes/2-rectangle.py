@@ -3,6 +3,12 @@
 class Rectangle:
     """ a rectangle class """
     def __init__(self, width=0, height=0):
+        """
+        This method initializes class attributes
+        args:
+            - width (default = 0): int
+            - height (default = 0): int
+        """
         self.width = width
         self.height = height
 
@@ -46,4 +52,3 @@ class Rectangle:
             return (0)
         else:
             return (2 * (self.__width + self.__height))
-
