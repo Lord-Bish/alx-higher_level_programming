@@ -10,9 +10,9 @@ class Rectangle:
     def __str__(self):
         """ prints the string format """
         if (self.__width == 0) or (self.__height == 0):
-            return ("")
+            return ""
         else:
-            for i in range(0, self.__height):
+            for i in range(self.__height):
                 print("#" * self.__width)
             print()
 
