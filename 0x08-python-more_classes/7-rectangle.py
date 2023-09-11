@@ -35,7 +35,7 @@ class Rectangle:
         """ a getter method """
         return (self.__width)
 
-    @width_setter
+    @width.setter
     def width(self, value):
         """ a setter method """
         if not isinstance(value, int):
@@ -50,7 +50,7 @@ class Rectangle:
         """ a getter method """
         return (self.__height)
 
-    @height_setter
+    @height.setter
     def height(self, value):
         """ a setter method """
         if type(value) is not int:
@@ -70,5 +70,3 @@ class Rectangle:
             return (0)
         else:
             return (2 * (self.__width + self.__height))
-
-

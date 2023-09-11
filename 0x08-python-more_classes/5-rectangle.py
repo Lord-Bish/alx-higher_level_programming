@@ -3,6 +3,7 @@
 class Rectangle:
     """ a rectangle class """
     def __init__(self, width=0, height=0):
+        """This method initializes class attributes"""
         self.width = width
         self.height = height
     
@@ -27,7 +28,7 @@ class Rectangle:
         """ a getter method """
         return (self.__width)
 
-    @width_setter
+    @width.setter
     def width(self, value):
         """ a setter method """
         if not isinstance(value, int):
@@ -42,7 +43,7 @@ class Rectangle:
         """a getter method """
         return (self.__height)
 
-    @height_setter
+    @height.setter
     def height(self, value):
         """ a setter method """
         if type(value) is not int:
@@ -62,5 +63,3 @@ class Rectangle:
             return (0)
         else:
             return (2 * (self.__width + self.__height))
-
-
