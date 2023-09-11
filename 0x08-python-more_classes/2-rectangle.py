@@ -21,7 +21,7 @@ class Rectangle():
         """a getter method"""
         return (self.__width)
 
-    @width_setter
+    @width.setter
     def width(self, value):
         """
         a setter method
@@ -40,7 +40,7 @@ class Rectangle():
         """a getter method"""
         return (self.__height)
 
-    @height_setter
+    @height.setter
     def height(self, value):
         """
         A setter method
