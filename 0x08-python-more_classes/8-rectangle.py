@@ -18,7 +18,7 @@ class Rectangle:
             return ("")
         else:
             for i in range(0, self.__height):
-                print(print_symbol * self.__width)
+                print(str(self.print_symbol) * self.__width)
 
     def __repr__(self):
         """ prints the string representation """
