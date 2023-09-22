@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module creates a class with inheritance"""
 
-Rectangle = __import__("models/rectangle.py").Rectangle
+from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """a Square with rectangle inheritance"""
