@@ -36,7 +36,7 @@ class Square(Rectangle):
             list_args = ["id", "size", "x", "y"]
 
             for i in range(len(args)):
-                if list_args[i] == size:
+                if list_args[i] == "size":
                     setattr(self, "width", args[i])
                     setattr(self, "height", args[i])
                 else:
