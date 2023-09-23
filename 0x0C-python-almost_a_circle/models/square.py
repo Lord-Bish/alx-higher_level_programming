@@ -36,11 +36,11 @@ class Square(Rectangle):
             list_args = ["id", "size", "x", "y"]
 
             for i in range(len(args)):
-                if list_attr[i] == size:
+                if list_args[i] == size:
                     setattr(self, "width", args[i])
                     setattr(self, "height", args[i])
                 else:
-                    setattr(self, list_attr[i], args[i])
+                    setattr(self, list_args[i], args[i])
 
         else:
             for key, value in kwargs.items():
