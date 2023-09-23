@@ -5,7 +5,7 @@ import json
 import os.path
 import csv
 
-class Base():
+class Base:
     """This is a base class"""
 
     __nb_objects = 0
@@ -13,7 +13,7 @@ class Base():
     def __init__(self, id=None):
         """Class instance constructor"""
 
-        if id is not None:
+        if id != None:
             self.id = id
 
         else:
@@ -24,7 +24,7 @@ class Base():
     def to_json_string(list_dictionaries):
         """returns json representation of a dict list"""
 
-        if list_dictionaries is None or len(list_dictionaries) is 0:
+        if list_dictionaries == None or len(list_dictionaries) == 0:
             return ("[]")
         else:
             return (json.dumps(list_dictionaries))

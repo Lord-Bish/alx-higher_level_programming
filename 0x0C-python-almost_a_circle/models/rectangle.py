@@ -15,7 +15,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        super.__init__(id)
+        super().__init__(id)
 
     @property
     def width(self):
@@ -46,7 +46,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
 
-        if value is < 0:
+        if value < 0:
             raise ValueError("height must be > 0")
 
         self.__height = value
@@ -64,7 +64,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
 
-        if value is < 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
 
         self.__x = value
@@ -82,7 +82,7 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError("y must be an integer")
 
-        if value is < 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
 
         self.__y = value
@@ -110,7 +110,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """updates methods"""
 
-        if args is not None and len(args) is not 0:
+        if args != None and len(args) != 0:
             list_attr = ["id", "width", "height", "x", "y"]
             for i in range(len(args)):
                 setattr(self, list_attr[i], args[i])
