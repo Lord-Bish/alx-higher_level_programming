@@ -10,3 +10,4 @@ def class_to_json(obj):
         result = obj.__dict__.copy()
 
     return result
+
