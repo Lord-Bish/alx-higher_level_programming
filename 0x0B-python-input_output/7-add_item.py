@@ -19,4 +19,4 @@ if os.path.exists(filename):
 for i in range(1, len(sys.argv)):
     json_list.append(sys.argv[i])
 
-    save_to_json_file(json_list, filename)
+save_to_json_file(json_list, filename)
